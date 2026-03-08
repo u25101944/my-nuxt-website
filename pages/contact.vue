@@ -97,6 +97,11 @@
           </form>
     </main>
 
+    <footer class="site-footer" :style="{ backgroundColor: '#310f10' }">
+      <div class="container">
+        <p :style="{ color: '#f3e3b2' }">© 2026 Uthi Njokweni. All rights reserved.</p>
+      </div>
+    </footer>
     
 </template>
 
