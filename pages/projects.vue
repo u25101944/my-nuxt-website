@@ -44,9 +44,9 @@
           <div class="project-content">
             <h2 class="project-title" :style="{ color: '#f3e3b2' }">Vacation Oasis</h2>
             <p class="project-description" :style="{ color: '#f3e3b2' }">
-              A team project creating a comprehensive tourist attraction guide for South Africa. Features interactive maps, attraction listings, and cultural information.
+              A team project where we created a tourist attraction guide for South Africa.
             </p>
-            <div class="project-tech">
+            <div class="project-tech"> 
               <span class="tech-tag" :style="{ backgroundColor: '#74070d', color: '#f3e3b2' }">HTML</span>
               <span class="tech-tag" :style="{ backgroundColor: '#947268', color: '#f3e3b2' }">CSS</span>
               <span class="tech-tag" :style="{ backgroundColor: '#310f10', color: '#f3e3b2' }">JavaScript</span>
@@ -63,7 +63,7 @@
           <div class="project-content">
             <h2 class="project-title" :style="{ color: '#f3e3b2' }">Isometric Room</h2>
             <p class="project-description" :style="{ color: '#f3e3b2' }">
-              An isometric illustration of my kitchen created using Adobe Illustrator. This project demonstrates precision in technical drawing and creative spatial representation.
+              An isometric illustration of my kitchen created using Adobe Illustrator.
             </p>
             <div class="project-tech">
               <span class="tech-tag" :style="{ backgroundColor: '#494429', color: '#f3e3b2' }">Adobe Illustrator</span>
@@ -76,7 +76,7 @@
 
     <footer class="site-footer" :style="{ backgroundColor: '#310f10' }">
       <div class="container">
-        <p :style="{ color: '#f3e3b2' }">© 2026 Your Name. All rights reserved.</p>
+        <p :style="{ color: '#f3e3b2' }">© 2026 Uthi Njokweni. All rights reserved.</p>
       </div>
     </footer>
 
@@ -90,9 +90,8 @@
 
 <style>
     .projects-page {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -104,54 +103,12 @@
   flex: 1;
 }
 
-/* Header & Navigation */
-.site-header {
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-}
 
-.main-nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 0 20px;
-}
-
-.nav-link {
-  color: #f3e3b2;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 8px 20px;
-  border-radius: 25px;
-  transition: all 0.3s ease;
-  font-size: 1.1em;
-}
-
-.nav-link:hover {
-  background-color: #947268;
-  color: #f3e3b2;
-  transform: translateY(-2px);
-}
-
-.nav-link.active {
-  background-color: #74070d;
-  color: #f3e3b2;
-  font-weight: 600;
-  box-shadow: 0 2px 8px rgba(116, 7, 13, 0.3);
-}
-
-/* Page Header */
 .page-title {
   font-size: 3em;
   text-align: center;
   margin: 20px 0 10px;
   font-weight: 700;
-  letter-spacing: 1px;
 }
 
 .page-subtitle {
@@ -163,7 +120,6 @@
   margin-right: auto;
 }
 
-/* Projects Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -171,20 +127,13 @@
   margin: 40px 0;
 }
 
-/* Project Cards */
 .project-card {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .project-image-container {
@@ -198,11 +147,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.project-card:hover .project-image {
-  transform: scale(1.1);
 }
 
 .project-content {
@@ -227,7 +171,6 @@
   line-height: 1.6;
 }
 
-/* Tech Tags */
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -241,6 +184,5 @@
   font-size: 0.85em;
   font-weight: 500;
   letter-spacing: 0.5px;
-  transition: transform 0.2s ease;
 }
 </style>

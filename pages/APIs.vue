@@ -11,24 +11,24 @@
             </ul>
         </nav>
     </header>
+
      <div class = "dogFacts">
           <h2>Random Dog Facts</h2>
 
-           <div v-if="dogLoading" class="loading-state">
+           <div v-if="dogLoading" class="loading">
             <p>Fetching a cute dog fact...</p>
             <div class="spinner"></div>
           </div>
         
           <div v-else-if="dogError" class="error-state">
-            <p> {{ dogError }}</p>
-            <button @click="fetchDogFact" class="retry-btn">Try Again</button>
+             {{ dogError }}
+            <button @click="fetchDogFact">Try Again</button>
           </div>
         
            <div v-else-if="dogFact" class="success-state">
-            <div class="fact-card">
             <p class="dog-fact-text">"{{ dogFact }}"</p>
-            </div>
            </div>
+
             <button @click="fetchDogFact" class="button" :disabled="dogLoading">
             {{ dogLoading ? 'Fetching...' : 'Get Another Fact' }}
             </button>
@@ -107,7 +107,7 @@
     }
     
     const data = await response.json()
-    
+    console.log('API Response:', data)
     
     if (data.success && data.facts && data.facts.length > 0) {
       dogFact.value = data.facts[0]
@@ -122,6 +122,10 @@
     dogLoading.value = false
   }
 }
+
+onMounted(() => {
+  fetchDogFact()
+})
 
 const weatherData = ref(null)
 const weatherLoading = ref(true)

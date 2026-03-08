@@ -74,7 +74,7 @@
                 v-model="formData.message"
                 required
                 :style="{ borderColor: '#947268' }"
-                placeholder="Tell me about your project or just say hello..."
+                placeholder="Type something..."
                 rows="5"
               ></textarea>
               <span id="PhoneNumber-error" class="error-message" v-if="phoneError">{{ phoneError }}</span>
@@ -146,7 +146,7 @@
 
 <style>
     .contact-page {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
